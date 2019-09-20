@@ -15,7 +15,7 @@
 <nav class="navbar-mobile" id="nav-mobile" style="display: none">
      <div class="container">
         <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="${context!}">${options.blog_title!}</a></div>
+            <div><a href="${context!}">${options.blog_title!}</a></div>
             <div class="menu-toggle">
                 <span></span><span></span><span></span>
             </div>

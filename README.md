@@ -1,5 +1,11 @@
 <h1><a href="https://github.com/halo-dev/halo-theme-keepIt" target="_blank">halo-theme-keepIt</a></h1>
 
+## 修改说明
+用于个人博客样式备份
+- 首页增加背景图，默认dark-theme。非首页保持原样。
+- 去除开关灯按钮
+- 增加journals模板
+
 ## 说明
 
 该主题的原作者为 [Fastbyte01](https://fsb01.com)，非常感谢做出这么优秀的主题。

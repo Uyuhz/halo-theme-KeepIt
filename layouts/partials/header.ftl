@@ -9,7 +9,6 @@
                     <a class="menu-item" href="${menu.url!}" title="${menu.name!}">${menu.name!}</a>
                 </#list>
             </@menuTag>
-            <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;
         </div>
     </div>
 </nav>

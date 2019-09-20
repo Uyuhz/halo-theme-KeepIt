@@ -29,17 +29,6 @@ jQuery(function($) {
         }
     };
 
-    _Blog.toggleTheme = function() {
-        const currentTheme = window.localStorage && window.localStorage.getItem('theme')
-        const isDark = currentTheme === 'dark'
-        $('body').toggleClass('dark-theme', isDark)
-        $('.theme-switch').on('click', () => {
-            $('body').toggleClass('dark-theme')
-            window.localStorage &&
-                window.localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light', )
-        })
-    }
-
     _Blog.toggleMobileMenu = function() {
         $('.menu-toggle').on('click', () => {
             $('.menu-toggle').toggleClass('active')
@@ -47,10 +36,17 @@ jQuery(function($) {
         })
     }
 
+    _Blog.isBgAndDarkThemeEnabel = function() {
+        if (location.pathname === "/") {
+            $('body').addClass('dark-theme');
+            $('main').addClass('background');
+        }
+    }
+
     $(document).ready(function() {
         // _Blog.prettify()
         _Blog.changeTitle()
-        _Blog.toggleTheme()
         _Blog.toggleMobileMenu()
+        _Blog.isBgAndDarkThemeEnabel()
     });
 });

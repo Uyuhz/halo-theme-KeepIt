@@ -6,5 +6,13 @@
   background-image: url("https://blog.uyuhz.fun/upload/2019/9/background-3bd903a32671451b97cdee96fe68c938.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .background {
+    background-image: url("https://blog.uyuhz.fun/upload/2019/9/background-3bd903a32671451b97cdee96fe68c938.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
 }

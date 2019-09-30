@@ -16,3 +16,59 @@
     background-position: center;
   }
 }
+
+.halo-comment {
+  transition: all .3s ease-in-out;
+  border: 2px dashed #ededed;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px 0;
+
+  .comment-placeholder {
+    border: unset;
+    transition: unset;
+  }
+}
+
+.journal-item {
+  padding: 1rem;
+  border-bottom: 1px solid #eeeeee;
+
+  .journal-comment {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .journal-item-wrapper {
+    display: flex;
+
+    img {
+      width: 50px;
+      border-radius: 50px;
+    }
+
+    .journal-comment-btn img {
+      width: 17px;
+      vertical-align: middle;
+    }
+
+    .journal-item-content-wrapper span {
+      vertical-align: middle;
+    }
+
+    .journal-item-avatar {
+      margin-right: 15px;
+    }
+
+    .journal-item-date {
+      color: #a9a9b3;
+      font-size: 13px;
+    }
+
+    .journal-item-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

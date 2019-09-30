@@ -43,10 +43,17 @@ jQuery(function($) {
         }
     }
 
+    _Blog.toggleJournalComment = function() {
+        $('.journal-comment-btn').on('click', (e)=> {
+            $('#journal-comment-'+ e.currentTarget.dataset.id).toggle();
+        })
+    }
+
     $(document).ready(function() {
         // _Blog.prettify()
         _Blog.changeTitle()
         _Blog.toggleMobileMenu()
         _Blog.isBgAndDarkThemeEnabel()
+        _Blog.toggleJournalComment()
     });
 });
